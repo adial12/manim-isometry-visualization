@@ -26,12 +26,16 @@ class BaseTransformationScene(MovingCameraScene):
         return Polygon(*screen_points, color=color)
 
 
-    def add_text(self, text_string, font_size=72):
+    def add_text(self, text_string, font_size=72, text_type='LaTeX'):
+    
         """
         Frames latex text in white box in upper right corner of the screen.
         Returns: mathematical object (mobject) containing latex text to be displayed.
         """
-        text = MathTex(text_string, color=WHITE, font_size=font_size)
+        if text_type != 'LaTeX':
+            text=Text(text_string,color=WHITE,font_size=font_size)
+        else:
+            text = MathTex(text_string, color=WHITE, font_size=font_size)
         box = SurroundingRectangle(text, color=WHITE, buff=MED_LARGE_BUFF)
         mobjects = VGroup(box, text)
     
@@ -249,7 +253,7 @@ class ReflectionComposition(BaseTransformationScene):
         translation_vector = np.array([8,0])
         #setup scene
         self.setup_tracking_camera(self.walker)    
-        self.add(self.axes, self.walker,self.add_text("Composition of three reflections",font_size=48))
+        self.add(self.axes, self.walker,self.add_text("Composition of three reflections",font_size=48, text_type='Text'))
         self.wait(1)
 
         current_points = self.trapezoid_points
