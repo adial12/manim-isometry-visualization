@@ -59,9 +59,9 @@ manim -pql isometries.py Glide
  ```
 
 You can use these helpful render flags: 
-`-p` to automatically play or preview the video once rendering is complete
-`-ql` to render in low quality (480p, 15fps) for fast iteration and testing
-`-qh` to render in high quality (1080p, 60fps) for final presentation outputs
+* `-p` to automatically play or preview the video once rendering is complete
+* `-ql` to render in low quality (480p, 15fps) for fast iteration and testing
+* `-qh` to render in high quality (1080p, 60fps) for final presentation outputs
 
 ## Structure
  ``` text
