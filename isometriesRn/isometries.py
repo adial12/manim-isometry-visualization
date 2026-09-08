@@ -1,11 +1,10 @@
 from manim import *
 import numpy as np
 
-class BaseTransformationScene(MovingCameraScene):
-    """Base class handling all repetitive setup, UI rendering, and math utilities."""
-    
+class BaseTransformationScene(MovingCameraScene):    
     def setup(self):
-        super().setup() # Required to initialize MovingCameraScene properties
+        """Sets up background for every scene"""
+        super().setup()
         
         self.axes = Axes(
             x_range=[-10, 80, 1],
@@ -18,6 +17,7 @@ class BaseTransformationScene(MovingCameraScene):
         self.trapezoid_points = [[-1, 2, 0], [-5, 2, 0], [-4, 5, 0], [-2, 5, 0]]
         self.walker = self.create_polygon(self.trapezoid_points, BLUE)
 
+
     def create_polygon(self, points, color=WHITE):
         if not points:
             return VGroup()
@@ -25,22 +25,29 @@ class BaseTransformationScene(MovingCameraScene):
         screen_points = [self.axes.c2p(p[0], p[1], p[2]) for p in points]
         return Polygon(*screen_points, color=color)
 
-    def add_text(self, text_string, font_size=72):
-            text = MathTex(text_string, color=WHITE, font_size=font_size)
-            box = SurroundingRectangle(text, color=WHITE, buff=MED_LARGE_BUFF)
-            mobjects = VGroup(box, text)
-        
-    # ---- Text placement -----
-            frame_right_edge = self.camera.frame.get_right()[0]
-            frame_top_edge = self.camera.frame.get_top()[1]
-            mobjects.move_to(np.array([frame_right_edge, frame_top_edge, 0]))
-            
-            mobjects.shift(RIGHT * 5 + DOWN * 2) # Adjust padding (larger because we zoomed out)
-            self.camera.frame.add(mobjects)
 
-            return mobjects
+    def add_text(self, text_string, font_size=72):
+        """
+        Frames latex text in white box in upper right corner of the screen.
+        Returns: mathematical object (mobject) containing latex text to be displayed.
+        """
+        text = MathTex(text_string, color=WHITE, font_size=font_size)
+        box = SurroundingRectangle(text, color=WHITE, buff=MED_LARGE_BUFF)
+        mobjects = VGroup(box, text)
+    
+        frame_right_edge = self.camera.frame.get_right()[0]
+        frame_top_edge = self.camera.frame.get_top()[1]
+        mobjects.move_to(np.array([frame_right_edge, frame_top_edge, 0]))
+        
+        mobjects.shift(RIGHT * 5 + DOWN * 2) # Adjust padding (larger because we zoomed out)
+        self.camera.frame.add(mobjects)
+        return mobjects
+
 
     def setup_tracking_camera(self, target_mobject, scale=2, height=None):
+        """
+        Camera tracks polygon as it moves across the X-axis. Sets up camera in the beginning frame.
+        """
         if height is not None:
             self.camera.frame.set_height(height)
         else:
@@ -48,6 +55,8 @@ class BaseTransformationScene(MovingCameraScene):
         self.camera.frame.save_state()
         start_x = target_mobject.get_center()[0]
         self.camera.frame.move_to(np.array([start_x, 0, 0]))
+
+
 
     @staticmethod
     def reflect(matrix, points):
