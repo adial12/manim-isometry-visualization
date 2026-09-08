@@ -1,17 +1,17 @@
 # Manim Isometry Visualization
 
-> An animated example of the different types of 2D Isometries (reflection, rotations, glide reflections). 
-
 <img width="400" height="225" alt="ZeroRotation" src="https://github.com/user-attachments/assets/da7389eb-7aff-4e98-81da-4efd096835a3" />
 
 
 
 ## Overview
-This project provides a visual example of different types of isometries in 2D space. Every isometry $h: \mathbb{R}^2 \to \mathbb{R}^2$ can be written uniquely as $h(v) = Av + w$ , where $A$ is an orthogonal matrix and $w$ is a translation vector. This can be concluded from this following lemma: The group of isometries over $\mathbb{R}^n$ is a semi direct product of the group of translation maps with the group of orthogonal matrices ($\mathbb{O}_n$), that is: $Iso(\mathbb{R}^n) \cong T(n) \rtimes \mathbb{O}_n$.
+This project provides a visual example of different types of isometries in 2D space. Every isometry $h: \mathbb{R}^2 \to \mathbb{R}^2$ can be written uniquely as $h(v) = Av + w$ , where $A$ is an orthogonal matrix and $w$ is a translation vector.
+
 By demonstrating how different choices of orthogonal matrices and translations shape these transformations, the project bridges abstract algebra with geometric intuition. It was built as extracurricular work for the Algebraic Structures course in the Ben-Gurion University Department of Mathematics, Fall semester 2026.
 
+
 ## Included Scenes
-The project features several distinct modular scenes demonstrating different mathematical properties:
+This project features the following modular scenes showcasing different mathematical properties:
 * **Glide:** Demonstrates glide reflections.
 * **NoneZeroTranslation:** Demonstrates pure translations using identity matrices and none zero vector translation.
 * **NoneZeroRotation:** Demonstrates isometries formed by a rotation matrix and none zero translation vector.
@@ -19,38 +19,8 @@ The project features several distinct modular scenes demonstrating different mat
 * **Reflection** Demonstrates reflection transformation over the x-axis.
 * **ReflectionComposition:** Visualizes the sequential composition of 3 reflections.
 
-## Code Architecture
-Built using a custom `BaseTransformationScene` inheriting from Manim's `MovingCameraScene`. This avoids repetitive code by standardizing:
-* Dynamic viewport and camera tracking.
-* Text anchoring and frame locking.
-* Modular mathematical helper methods for calculating matrix transformations and vector translations.
 
-## Getting Started
-
-### Prerequisites
-1. Python >= 3.13 
-2. manim >= 0.19.1
-3. LaTeX
-
-
-### Installation
-1. Clone the repository:
- ``` bash
-git clone https://github.com/adial12/manim-isometry-visualization.git
- ```
-Navigate into the directory:
- ``` bash
-cd manim-isometry-visualization
- ```
-Install manim:
- ``` python
-pip install manim
- ```
-
-
-For full documentation and installation instructions, please refer to the offical manim documentation for full installation explanations: https://docs.manim.community/en/stable/installation.html
-
-2. To render and view the visual demonstrations of the 2D isometries, run the command in your terminal:
+To render and view the visual demonstrations of the 2D isometries, run the command in your terminal:
  ``` bash
 manim -pql isometries.py IsometryScene
  ```
@@ -65,9 +35,12 @@ You can use these helpful render flags:
 * `-ql` to render in low quality (480p, 15fps) for fast iteration and testing
 * `-qh` to render in high quality (1080p, 60fps) for final presentation outputs
 
-## Structure
- ``` text
-manim-isometry-visualization/
-├── isometries.py     # Python script containing the Manim scene classes
-└── README.md         # Project documentation and mathematical overview
- ```
+## Citations
+```bibtex
+@article{conrad_isometries_rn,
+  author = {Conrad, Keith},
+  title = {Isometries of $\mathbb{R}^n$},
+  journal = {Expository Notes, University of Connecticut},
+  url = {https://kconrad.math.uconn.edu/blurbs/grouptheory/isometryRn.pdf}
+}
+```
