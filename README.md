@@ -32,21 +32,40 @@ Built using a custom `BaseTransformationScene` inheriting from Manim's `MovingCa
 
 
 ### Installation
-1. Install the project by cloning the repository with `git clone https://github.com/adial12/manim-isometry-visualization.git`, navigating into the directory using `cd manim-isometry-visualization`, and installing the required Python packages by running `pip install manim`. 
+1. Clone the repository:
+ ``` bash
+git clone https://github.com/adial12/manim-isometry-visualization.git
+ ```
+Navigate into the directory:
+ ``` bash
+cd manim-isometry-visualization
+ ```
+Install manim:
+ ``` python
+pip install manim
+ ```
+
+
 For full documentation and installation instructions, please refer to the offical manim documentation for full installation explanations: https://docs.manim.community/en/stable/installation.html
 
 2. To render and view the visual demonstrations of the 2D isometries, run the command in your terminal:
-`manim -pql isometries.py IsometryScene`
+ ``` bash
+manim -pql isometries.py IsometryScene
+ ```
 Make sure to replace the file and class names if they differ.
 For example:
-`manim -pql isometries.py Glide`
+ ``` bash
+manim -pql isometries.py Glide
+ ```
 
-You can use these helpful render flags:
+You can use these helpful render flags: 
 `-p` to automatically play or preview the video once rendering is complete
 `-ql` to render in low quality (480p, 15fps) for fast iteration and testing
-`-qh` to render in high quality (1080p, 60fps) for final presentation outputs. 
+`-qh` to render in high quality (1080p, 60fps) for final presentation outputs
 
-### Structure
+## Structure
+ ``` text
 manim-isometry-visualization/
 ├── isometries.py     # Python script containing the Manim scene classes
 └── README.md         # Project documentation and mathematical overview
+ ```
