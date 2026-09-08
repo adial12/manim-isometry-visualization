@@ -2,7 +2,8 @@
 
 > An animated example of the different types of 2D Isometries (reflection, rotations, glide reflections). 
 
-https://github.com/user-attachments/assets/6e380aa2-3284-4afe-b5ac-ab5d152db058
+![Uploading ReflectionComposition_gif.gif…]()
+
 
 ## Overview
 This project provides a visual example of different types of isometries in 2D space. Every isometry $h: \mathbb{R}^2 \to \mathbb{R}^2$ can be written uniquely as $h(v) = Av + w$ , where $A$ is an orthogonal matrix and $w$ is a translation vector. This can be concluded from this following lemma: The group of isometries over $\mathbb{R}^n$ is a semi direct product of the group of translation maps with the group of orthogonal matrices ($\mathbb{O}_n$), that is: $Iso(\mathbb{R}^n) \cong T(n) \rtimes \mathbb{O}_n$.
