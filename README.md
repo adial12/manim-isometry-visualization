@@ -5,11 +5,12 @@
 ![Preview Animation Placeholder](path/to/preview.gif)
 
 ## Overview
-This project provides a visual example for different types of Isometries in 2D space. Every isometry h:R^2->R^2 can be written uniquely as h(v) = Av + w , where A is an orthogonal matrix and w is a vector in the space. This project explores 2D isometries and provides visual examples for how the different choices of orthogonal matrices and vector choices create different types of isometries. This project was built as part of extracaricular work for an advanced Algabareic Structures class in Ben Gurion University Mathematics department, fall semester 2026.
+This project provides a visual example of different types of isometries in 2D space. Every isometry $h: \mathbb{R}^2 \to \mathbb{R}^2$ can be written uniquely as $h(v) = Av + w$ , where $A$ is an orthogonal matrix and $w$ is a translation vector. This can be concluded from this following lemma: The group of isometries over $\mathbb{R}^n$ is a semi direct product of the group of translation maps with the group of orthogonal matrices ($\mathbb{O}_n$), that is: $Iso(\mathbb{R}^n) \cong T(n) \rtimes \mathbb{O}_n$.
+By demonstrating how different choices of orthogonal matrices and translations shape these transformations, the project bridges abstract algebra with geometric intuition. It was built as extracurricular work for the Algebraic Structures course in the Ben-Gurion University Department of Mathematics, Fall semester 2026.
 
 ## Included Scenes
 The project features several distinct modular scenes demonstrating different mathematical properties:
-* **Glide:** Demonstrates glide reflections ($\det A = -1, w \ne 0$).
+* **Glide:** Demonstrates glide reflections.
 * **NoneZeroTranslation:** Demonstrates pure translations using identity matrices and none zero vector translation.
 * **NoneZeroRotation:** Demonstrates isometries formed by a rotation matrix and none zero translation vector.
 * **Rotation:** Demonstrates rotation transformations centered on (0,0).
@@ -20,15 +21,32 @@ The project features several distinct modular scenes demonstrating different mat
 Built using a custom `BaseTransformationScene` inheriting from Manim's `MovingCameraScene`. This avoids repetitive code by standardizing:
 * Dynamic viewport and camera tracking.
 * Text anchoring and frame locking.
-* Modular mathematical helper methods for calculating matrix reflections and vector translations.
+* Modular mathematical helper methods for calculating matrix transformations and vector translations.
 
 ## Getting Started
 
 ### Prerequisites
-Make sure you have Python installed along with Manim's system dependencies (like FFmpeg and Cairo).
+1. Python 3.10 or higher
+2. Manim system dependicies: FFmpeg, Cairo
+3. LaTeX
+
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/manim-geometric-transformations.git](https://github.com/your-username/manim-geometric-transformations.git)
-   cd manim-geometric-transformations
+1. Install the project by cloning the repository with `git clone https://github.com/adial12/manim-isometry-visualization.git`, navigating into the directory using `cd manim-isometry-visualization`, and installing the required Python packages by running `pip install manim`. 
+For full documentation and installation instructions, please refer to the offical manim documentation for full installation explanations: https://docs.manim.community/en/stable/installation.html
+
+2. To render and view the visual demonstrations of the 2D isometries, run the command in your terminal:
+`manim -pql isometries.py IsometryScene`
+Make sure to replace the file and class names if they differ.
+For example:
+`manim -pql isometries.py Glide`
+
+You can use these helpful render flags:
+`-p` to automatically play or preview the video once rendering is complete
+`-ql` to render in low quality (480p, 15fps) for fast iteration and testing
+`-qh` to render in high quality (1080p, 60fps) for final presentation outputs. 
+
+### Structure
+manim-isometry-visualization/
+├── isometries.py     # Python script containing the Manim scene classes
+└── README.md         # Project documentation and mathematical overview
