@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/2265337329_1121617232_631829896.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/1618686436_1121617232_3708036123.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/2628273813_1475096560_10528331.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/3330149116_878399326_3287537620.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/50647906_620017856_3939056459.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/50647906_3534478838_3939056459.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/50647906_212113904_2442076649.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/50647906_878399326_2442076649.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/50647906_620017856_2554935071.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/definitions/1080p60/partial_movie_files/glide/50647906_3534478838_2554935071.mp4'

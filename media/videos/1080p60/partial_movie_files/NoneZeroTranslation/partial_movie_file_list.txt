@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/3651260038_1121617232_3351712690.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/292818292_1275032481_2158540603.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/2859274064_975179543_4201715041.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/3175673502_258702337_3043268003.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/1610596513_1776032351_3043268003.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/3213351988_2301975632_3849406814.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/2157885977_2852371545_3849406814.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/3541484954_3301919705_4259993641.mp4'
+file 'file:C:/Users/adial/manimations/media/videos/1080p60/partial_movie_files/NoneZeroTranslation/644494919_1298705399_4259993641.mp4'

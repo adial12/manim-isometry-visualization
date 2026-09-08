@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3649076962_1121617232_3351712690.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_398248613_2158540603.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_2444003409_2158540603.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_2477675561_1569923705.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_2322009612_1569923705.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_87536172_2811798599.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_345379952_2811798599.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_2917029886_3248232976.mp4'
+file 'file:C:/Users/adial/manimations/isometriesRn/media/videos/isometries/1080p60/partial_movie_files/NoneZeroRotation/3193863643_322946114_3248232976.mp4'
