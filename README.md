@@ -26,8 +26,8 @@ Built using a custom `BaseTransformationScene` inheriting from Manim's `MovingCa
 ## Getting Started
 
 ### Prerequisites
-1. Python 3.10 or higher
-2. Manim system dependicies: FFmpeg, Cairo
+1. Python >= 3.13 
+2. manim >= 0.19.1
 3. LaTeX
 
 
