@@ -2,7 +2,8 @@
 
 > An animated example of the different types of 2D Isometries (reflection, rotations, glide reflections). 
 
-<img width="1920" height="1080" alt="ReflectionComposition_gif" src="https://github.com/user-attachments/assets/fd591d04-34a0-4d5d-8e7b-ee9b64ad8736" />
+<img width="400" height="225" alt="ZeroRotation" src="https://github.com/user-attachments/assets/da7389eb-7aff-4e98-81da-4efd096835a3" />
+
 
 
 ## Overview
